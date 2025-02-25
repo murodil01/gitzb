@@ -1,5 +1,5 @@
 import React from "react";
-import gambur from "./images/gambur.png"; 
+import gambur from "./assets/images/gambur.png"; 
 
 const Cards = () => {
   return (
