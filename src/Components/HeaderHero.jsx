@@ -1,5 +1,5 @@
-/*import React, { useState } from "react";
-import bgImg from "./images/bg_iimg.png";
+import React, { useState } from "react";
+//import bg_iimg from "./images/bg_iimg.png";
 import { FiMenu, FiX } from "react-icons/fi";
 
 const Header = () => {
@@ -44,7 +44,7 @@ const HeaderHero = () => {
   return (
     <div
       className="bg-cover bg-center bg-no-repeat text-white px-6"
-      style={{ backgroundImage: `url(${bgImg})` }}
+      /*style={{ backgroundImage: `url(${bg_iimg})` }}*/
     >
       <Header />
       <div className="flex flex-col pt-[80px] text-left">
@@ -72,4 +72,4 @@ const HeaderHero = () => {
   );
 };
 
-export default HeaderHero;*/
+export default HeaderHero;

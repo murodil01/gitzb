@@ -1,4 +1,5 @@
-/*import React from "react";
+import React from "react";
+
 function Map() {
   return (
     <div>
@@ -9,4 +10,4 @@ function Map() {
     </div>
   );
 }
-export default Map;*/
+export default Map;
