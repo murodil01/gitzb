@@ -52,25 +52,30 @@ const Cards = () => {
   }, []);
 
   return (
-    <div className="py-[47px]">
+    <div className="container max-w-[1200px] mx-auto py-[47px] px-4">
       <nav className="pb-[74px] text-left">
         <ul className="flex flex-wrap gap-x-[44px]">
-          {["Гамбургеры", "Хот доги", "Пицца", "Напитки", "Соки"].map((category, index) => (
-            <li key={index}>
-              <a
-                className="text-[#7A7A7A] font-semibold text-[20px] leading-[23.48px] hover:text-[#4E9F0D] transition-colors duration-300"
-                href="#"
-              >
-                {category}
-              </a>
-            </li>
-          ))}
+          {["Гамбургеры", "Хот доги", "Пицца", "Напитки", "Соки"].map(
+            (category, index) => (
+              <li key={index}>
+                <a
+                  className="text-[#7A7A7A] font-semibold text-[20px] leading-[23.48px] hover:text-[#4E9F0D] transition-colors duration-300"
+                  href="#"
+                >
+                  {category}
+                </a>
+              </li>
+            )
+          )}
         </ul>
       </nav>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-x-[60px] gap-y-[39px]">
         {products.map((product) => (
-          <div key={product.id} className="flex flex-col max-w-[350px] w-full relative">
+          <div
+            key={product.id}
+            className="flex flex-col max-w-[350px] w-full relative"
+          >
             <img
               className="max-w-[350px] w-full max-h-[350px] h-full object-contain"
               src={product.image}
@@ -83,11 +88,15 @@ const Cards = () => {
 
             <div className="text-left">
               <h3 className="font-bold text-[20px] leading-[28.18px] text-[#4E9F0D] pt-[36px]">
-                {product.title.length > 25 ? product.title.slice(0, 25) + "..." : product.title}
+                {product.title.length > 25
+                  ? product.title.slice(0, 25) + "..."
+                  : product.title}
               </h3>
 
               <p className="font-normal text-[16px] leading-[23px] text-white pt-[7px]">
-                {product.description.length > 100 ? product.description.slice(0, 100) + "..." : product.description}
+                {product.description.length > 100
+                  ? product.description.slice(0, 100) + "..."
+                  : product.description}
               </p>
             </div>
           </div>
@@ -98,4 +107,3 @@ const Cards = () => {
 };
 
 export default Cards;
-
